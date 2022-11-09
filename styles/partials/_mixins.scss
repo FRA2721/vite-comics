@@ -1,0 +1,19 @@
+// mixin
+@mixin flex-center($elementsPosition: "both"){
+    display: flex;
+
+    // elements-positions
+    // horizontal-elements-position
+    @if $elementsPosition == "horizontal" {
+        justify-content: center;
+
+    // vertical-elements-position
+    } @else if $elementsPosition == "vertical" {
+        align-items: center;
+
+    // different-elements-position
+    } @else {
+        align-items: center;
+        justify-content: center;
+    }
+}

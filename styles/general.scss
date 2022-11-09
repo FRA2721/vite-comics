@@ -1,0 +1,43 @@
+// reset-section
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+// html-common
+html{
+    font-size: 100%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+
+// container
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+
+
+// img-formatting-section
+img{
+    max-width: 100%;
+}
+
+
+
+// list-formatting
+ul{
+    list-style: none;
+}
+
+
+
+// anchor-formatting
+a{
+    text-decoration: none;
+}
