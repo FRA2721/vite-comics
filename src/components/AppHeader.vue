@@ -130,11 +130,16 @@ header {
     // logo
     .logo{
         width: 100%;
-        margin-left: 60px;
+        margin-right: 500px;
         margin-top: 33px;
-        @include flex-center("vertical");
+        transition-duration: 1s;
+        @include flex-center("horizontal");
     }
 
+    .logo:hover{
+        transform: scale(1.1);
+        cursor: pointer;
+    }
     // nav-section
     .nav{
         width: 50%;
@@ -167,7 +172,7 @@ header {
                     border-bottom: 1.5px solid $primary;
                     border-radius: 3px;
                 }
-                
+
             }
         }
     }
