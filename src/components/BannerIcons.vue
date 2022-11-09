@@ -3,7 +3,7 @@
 
 export default{
     // text
-    text: "AppIcons",
+    text: "BannerIcons",
 
     data(){
         return {

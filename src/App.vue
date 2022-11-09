@@ -6,10 +6,10 @@
 <!-- script-section -->
 <script>
 
-// import-AppHeader.vue
+// impoerting-section-vue-file
 import AppHeader from './components/AppHeader.vue';
 import ProductList from './components/ProductList.vue';
-import AppIcons from './components/AppIcons.vue';
+import BannerIcons from './components/BannerIcons.vue';
 
 export default{
 
@@ -17,7 +17,7 @@ export default{
   components: {
     AppHeader, 
     ProductList,
-    AppIcons
+    BannerIcons
   }
 }
 </script>
@@ -37,7 +37,7 @@ export default{
   <!-- main-section -->
   <main>
     <ProductList />
-    <AppIcons />
+    <BannerIcons />
   </main>
   <!-- /main-section -->
 
