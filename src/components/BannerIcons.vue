@@ -101,6 +101,9 @@ export default{
                     padding: 0 .5em;
                     font-size: .7rem;
                 }
+                a:hover{
+                    color: black;
+                }
 
                 // img
                 img{

@@ -10,14 +10,13 @@
 import AppHeader from './components/AppHeader.vue';
 import ProductList from './components/ProductList.vue';
 import BannerIcons from './components/BannerIcons.vue';
+import FooterLinks from './components/FooterLinks.vue';
 
 export default{
 
   // components
   components: {
-    AppHeader, 
-    ProductList,
-    BannerIcons
+    AppHeader, ProductList, BannerIcons, FooterLinks
   }
 }
 </script>
@@ -40,6 +39,12 @@ export default{
     <BannerIcons />
   </main>
   <!-- /main-section -->
+
+  <!-- footer-section -->
+  <footer>
+    <FooterLinks />
+  </footer>
+  <!-- /footer-section -->
 
 </template>
 <!-- /template-section -->

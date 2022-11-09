@@ -18,7 +18,7 @@ export default{
 
             <!-- products-list-section -->
             <div class="products-list">
-                <h2>FRANCESCO CIMINO... Coming soon...</h2>
+                <h2>FRANCESCO CIMINO... Cooming soon...</h2>
             </div>
             <!-- /products-list-section -->
 
