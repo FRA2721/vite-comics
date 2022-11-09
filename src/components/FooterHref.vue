@@ -2,7 +2,7 @@
 <script>
 export default{
     // name
-    name: "FooterLinks",
+    name: "FooterHref",
     data(){
         return {
             footerHrefArray: [
