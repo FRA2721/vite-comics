@@ -149,18 +149,18 @@ header {
             // items-formatting
             li {
                 height: 100%;
-                margin: .4em;
+                margin: 1em;
                 // mixin
                 @include flex-center("vertical");
 
                 // anchor-formatting
                 a{
                     color: black;
-                    font-size: .6rem;
+                    font-size: 1rem;
                     text-decoration: none;
                     transition-duration: 1s;
                 }
-                
+
                 // &:hover{
                 // }
                 &.active{

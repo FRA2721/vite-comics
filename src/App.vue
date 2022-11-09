@@ -8,12 +8,16 @@
 
 // import-AppHeader.vue
 import AppHeader from './components/AppHeader.vue';
+import ProductList from './components/ProductList.vue';
+import AppIcons from './components/AppIcons.vue';
 
 export default{
 
   // components
   components: {
-    AppHeader,
+    AppHeader, 
+    ProductList,
+    AppIcons
   }
 }
 </script>
@@ -29,7 +33,14 @@ export default{
     <AppHeader />
   </header>  
   <!-- /header-section -->
-  
+
+  <!-- main-section -->
+  <main>
+    <ProductList />
+    <AppIcons />
+  </main>
+  <!-- /main-section -->
+
 </template>
 <!-- /template-section -->
 
