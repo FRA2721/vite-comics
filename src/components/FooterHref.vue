@@ -8,7 +8,7 @@ export default{
             footerHrefArray: [
                 {
                     // dc-comics-section
-                    text: "dc comics",
+                    text: "DC COMICS",
                     links: [
                         {
                             text: "Characters", href: "/characters"
@@ -42,7 +42,7 @@ export default{
 
                 {
                     // dec-section
-                    text: "dc",
+                    text: "DC",
                     links: [
                         {
                             text: "Terms Of Use", href: "/terms-of-use"
@@ -92,7 +92,7 @@ export default{
 
                 {
                     // sites-section
-                    text: "sites",
+                    text: "SITES",
                     links: [
                         {
                             text:"DC", href:"dc"
@@ -119,7 +119,7 @@ export default{
 
                 {
                     // shop-section
-                    text: "shop",
+                    text: "SHOP",
                     links: [
                         {
                             text: "Shop DC", href: "/shopdc"
@@ -153,7 +153,7 @@ export default{
             <div class="footer-href-array">
 
                 <ul v-for="(category, index) in footerHrefArray" :key="index">
-                    <h3>{{ category.text.toUpperCase() }}</h3>
+                    <h3>{{ category.text }}</h3>
                     <li v-for="(link, secondaryIndex) in category.links" :key="secondaryIndex"><a :href="link.href">{{ link.text }}</a></li>
                 </ul>
 
