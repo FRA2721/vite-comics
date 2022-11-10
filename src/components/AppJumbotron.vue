@@ -52,7 +52,7 @@ export default{
         opacity: .5;
 
         &:hover{
-        transform: scale(.9);
+        transform: scale(.99);
         border-radius: 50px;
         opacity: 1;
     }
@@ -64,8 +64,8 @@ export default{
         .jumbo-section{
             position: absolute;
             top: 50%;
-            left: 80px;
-            padding: .3em .3em;
+            left: 108px;
+            padding: .5em 3em;
             color: white;
             transform: translateY(-50%);
             background-color: $primary;

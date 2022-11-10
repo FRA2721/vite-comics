@@ -8,17 +8,18 @@
 
 // importing-section-vue-file
 import AppHeader from './components/AppHeader.vue';
+import AppJumbotron from './components/AppJumbotron.vue';
+import AppSeriesCards from './components/AppSeriesCards.vue';
 import AppComicsList from './components/AppComincsList.vue';
 import AppBannerIcons from './components/AppBannerIcons.vue';
 import AppFooterHref from './components/AppFooterHref.vue';
 import AppFooterSocialHref from './components/AppFooterSocialHref.vue';
-import AppJumbotron from './components/AppJumbotron.vue';
 
 export default{
 
   // components
   components: {
-    AppHeader, AppJumbotron, AppComicsList, AppBannerIcons, AppFooterHref, AppFooterSocialHref
+    AppHeader, AppJumbotron, AppSeriesCards, AppComicsList, AppBannerIcons, AppFooterHref, AppFooterSocialHref
   },
   methods: {
     getImagePath(imgPath){

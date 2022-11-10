@@ -10,42 +10,43 @@ export default{
             // set-array-nav
             navArray: [
                 {
-                    name: "characters", href: "/characters", active: false
+                    name: "characters", href: "/characters"
                 },
 
                 {
-                    name: "comics", href: "/comics", active: true,                },  
+                    name: "comics", href: "/comics"
+                },  
 
                 {
-                    name: "movies", href: "/movies", active: false
+                    name: "movies", href: "/movies"
                 },
 
                 {
-                    name: "tv", href: "/tv",                                  active: false,
+                    name: "tv", href: "/tv",
                 },
                 {
 
-                    name: "games", href: "/games", active: false
+                    name: "games", href: "/games"
                 },
 
                 {
-                    name: "collectibles", href: "/collectibles", active: false
+                    name: "collectibles", href: "/collectibles"
                 },
 
                 {
-                    name: "videos", href: "/videos", active: false
+                    name: "videos", href: "/videos"
                 },
 
                 {
-                    name: "fans", href: "/fans", active: false
+                    name: "fans", href: "/fans"
                 },
 
                 {
-                    name: "news", href: "/news", active: false
+                    name: "news", href: "/news"
                 },
 
                 {
-                    name: "shop", href: "/shop", active: false
+                    name: "shop", href: "/shop"
                 }
             ]
         }
@@ -127,29 +128,30 @@ header {
         ul{
             height: 100%;
             margin-right: 200px;
-            // mixin
             @include flex-center("horizontal");
 
             // items-formatting
             li {
                 height: 100%;
                 margin: 1em;
-                // mixin
+                transition-duration: .3s;
                 @include flex-center("vertical");
 
+                &:hover{
+                    border-radius: 3px;
+                    border-bottom: 5px solid $primary;
+                    cursor: pointer;
+                }
                 // anchor-formatting
                 a{
                     color: black;
                     font-size: 1rem;
                     text-decoration: none;
                     transition-duration: 1s;
-                }
 
-                // &:hover{
-                // }
-                &.active{
-                    border-bottom: 1.5px solid $primary;
-                    border-radius: 3px;
+                    &:hover{
+                        color: $primary;
+                    }
                 }
 
             }

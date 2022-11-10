@@ -2,13 +2,13 @@
 <script>
 export default{
     // name
-    name: "FooterHref",
+    name: "AppFooterHref",
     data(){
         return {
             footerHrefArray: [
                 {
                     // dc-comics-section
-                    text: "DC COMICS",
+                    textSection: "DC COMICS",
                     links: [
                         {
                             text: "Characters", href: "/characters"
@@ -42,7 +42,7 @@ export default{
 
                 {
                     // dec-section
-                    text: "DC",
+                    textSection: "DC",
                     links: [
                         {
                             text: "Terms Of Use", href: "/terms-of-use"
@@ -92,7 +92,7 @@ export default{
 
                 {
                     // sites-section
-                    text: "SITES",
+                    textSection: "SITES",
                     links: [
                         {
                             text:"DC", href:"dc"
@@ -119,7 +119,7 @@ export default{
 
                 {
                     // shop-section
-                    text: "SHOP",
+                    textSection: "SHOP",
                     links: [
                         {
                             text: "Shop DC", href: "/shopdc"
@@ -153,7 +153,7 @@ export default{
             <div class="footer-href-array">
 
                 <ul v-for="(category, index) in footerHrefArray" :key="index">
-                    <h3>{{ category.text }}</h3>
+                    <h3>{{ category.textSection }}</h3>
                     <li v-for="(link, secondaryIndex) in category.links" :key="secondaryIndex"><a :href="link.href">{{ link.text }}</a></li>
                 </ul>
 
@@ -207,12 +207,22 @@ export default{
                 // list-items-href
                 li{
                     margin: .3em 0;
+                    list-style: none;
+                    text-decoration: underline;
 
+                    &::before{
+                        content: "\2022";
+                        color: white;
+                        font-weight: bold;
+                        display: inline-block; 
+                        width: 1em;
+
+                    }
+                    
                     a{
                         color: grey;
                         font-size: .9rem;
                     }
-
                 }
 
                 // toCheck
@@ -223,8 +233,8 @@ export default{
                 
                 // h3-tipography
                 h3{
-                    font-size: 1.5rem;
                     color: white;
+                    font-size: 1.5rem;
                     margin-bottom: 1rem;
                 }
             }
