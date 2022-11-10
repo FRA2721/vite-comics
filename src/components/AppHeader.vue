@@ -10,63 +10,42 @@ export default{
             // set-array-nav
             navArray: [
                 {
-                    name: "characters",
-                    href: "/characters",
-                    active: false,
+                    name: "characters", href: "/characters", active: false
                 },
 
                 {
-                    name: "comics",
-                    href: "/comics",
-                    active: true,
-                },  
+                    name: "comics", href: "/comics", active: true,                },  
 
                 {
-                    name: "movies",
-                    href: "/movies",
-                    active: false,
+                    name: "movies", href: "/movies", active: false
                 },
 
                 {
-                    name: "tv",
-                    href: "/tv",
-                    active: false,
+                    name: "tv", href: "/tv",                                  active: false,
                 },
                 {
 
-                    name: "games",
-                    href: "/games",
-                    active: false,
+                    name: "games", href: "/games", active: false
                 },
 
                 {
-                    name: "collectibles",
-                    href: "/collectibles",
-                    active: false,
+                    name: "collectibles", href: "/collectibles", active: false
                 },
 
                 {
-                    name: "videos",
-                    href: "/videos",
-                    active: false,
+                    name: "videos", href: "/videos", active: false
                 },
 
                 {
-                    name: "fans",
-                    href: "/fans",
-                    active: false,
+                    name: "fans", href: "/fans", active: false
                 },
 
                 {
-                    name: "news",
-                    href: "/news",
-                    active: false,
+                    name: "news", href: "/news", active: false
                 },
 
                 {
-                    name: "shop",
-                    href: "/shop",
-                    active: false,
+                    name: "shop", href: "/shop", active: false
                 }
             ]
         }

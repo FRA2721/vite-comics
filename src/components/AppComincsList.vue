@@ -2,7 +2,7 @@
 <script>
 export default{
     // name
-    name: "ProductList"
+    name: "AppComicsList"
 }
 </script>
 <!-- /script-section -->
@@ -10,23 +10,23 @@ export default{
 <!-- template-section -->
 <template>
 
-    <!-- products-section -->
-    <section class="products">
+    <!-- comics-section -->
+    <section class="comics">
 
-        <!-- products-section-container -->
+        <!-- comics-section-container -->
         <div class="container">
 
-            <!-- products-list-section -->
-            <div class="products-list">
+            <!-- comics-list-section -->
+            <div class="comics-list">
                 <h2>FRANCESCO CIMINO... Cooming soon...</h2>
             </div>
-            <!-- /products-list-section -->
+            <!-- /comics-list-section -->
 
         </div>
-        <!-- /products-section-container -->
+        <!-- /comics-section-container -->
 
     </section>
-    <!-- /products-section -->
+    <!-- /comics-section -->
 </template>
 <!-- /tempalte-section -->
 
@@ -35,11 +35,11 @@ export default{
 @use "../styles/partials/mixins" as *;
 @use "../styles/partials/variables" as *;
 
-.products{
+.comics{
     background-color: $secondary;
     .container{
         color: white;
-        .products-list{
+        .comics-list{
             margin-top: 30px;
             padding: 3em 0;
         }

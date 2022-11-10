@@ -12,12 +12,19 @@ import AppComicsList from './components/AppComincsList.vue';
 import AppBannerIcons from './components/AppBannerIcons.vue';
 import AppFooterHref from './components/AppFooterHref.vue';
 import AppFooterSocialHref from './components/AppFooterSocialHref.vue';
+import AppJumbotron from './components/AppJumbotron.vue';
 
 export default{
 
   // components
   components: {
-    AppHeader, AppComicsList, AppBannerIcons, AppFooterHref, AppFooterSocialHref
+    AppHeader, AppJumbotron, AppComicsList, AppBannerIcons, AppFooterHref, AppFooterSocialHref
+  },
+  methods: {
+    getImagePath(imgPath){
+      return new URL(imgPath, import.meta.url).href;
+    }
+
   }
 }
 </script>
@@ -36,6 +43,7 @@ export default{
 
   <!-- main-section -->
   <main>
+    <AppJumbotron :imgUrl="getImagePath('./assets/img/jumbotron.jpg')" :text="'CURRENT SERIES'" />
     <AppComicsList />
     <AppBannerIcons />
   </main>
