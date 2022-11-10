@@ -100,9 +100,10 @@ export default{
                     color: white;
                     padding: 0 .5em;
                     font-size: .7rem;
-                }
-                a:hover{
-                    color: black;
+                
+                    &:hover{
+                        color: black;
+                    }
                 }
 
                 // img

@@ -6,17 +6,18 @@
 <!-- script-section -->
 <script>
 
-// impoerting-section-vue-file
+// importing-section-vue-file
 import AppHeader from './components/AppHeader.vue';
-import ProductList from './components/ProductList.vue';
-import BannerIcons from './components/BannerIcons.vue';
-import FooterHref from './components/FooterHref.vue';
+import AppComicsList from './components/AppComincsList.vue';
+import AppBannerIcons from './components/AppBannerIcons.vue';
+import AppFooterHref from './components/AppFooterHref.vue';
+import AppFooterSocialHref from './components/AppFooterSocialHref.vue';
 
 export default{
 
   // components
   components: {
-    AppHeader, ProductList, BannerIcons, FooterHref
+    AppHeader, AppComicsList, AppBannerIcons, AppFooterHref, AppFooterSocialHref
   }
 }
 </script>
@@ -35,14 +36,15 @@ export default{
 
   <!-- main-section -->
   <main>
-    <ProductList />
-    <BannerIcons />
+    <AppComicsList />
+    <AppBannerIcons />
   </main>
   <!-- /main-section -->
 
   <!-- footer-section -->
   <footer>
-    <FooterHref />
+    <AppFooterHref />
+    <AppFooterSocialHref />
   </footer>
   <!-- /footer-section -->
 
