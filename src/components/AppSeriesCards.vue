@@ -13,7 +13,7 @@ export default{
 <template>
     <div class="series">
         <img :src="imgUrl" alt="series images">
-        <h3>{{ nameSeries }}</h3>
+        <p>{{ nameSeries }}</p>
         <h4>{{ seriesPrice }}</h4>
     </div>
 </template>
@@ -31,7 +31,9 @@ export default{
     margin: .5em;
     width: calc(100% / 6 - 3em);
     padding-bottom: 3rem;
+    transition-duration: 1s;
 
+    
     // img-formatting-section
     img{
         object-position: top;
@@ -44,7 +46,7 @@ export default{
         margin-top: 30px;
         opacity: .5;
         border: 3px solid white;
-
+        
         &:hover{
             transform: scale(.95);
             border-radius: 33px;
@@ -53,12 +55,16 @@ export default{
             border: 3px solid $primary;
         }
     }
+    
+    &:hover p{
+        color: $primary;
+    }
 
-    // h3-tipography
-    h3{
+    // p-tipography
+    p{
         width: 150px;
         color: white;
-        margin-left: 120px;
+        margin-left: 100px;
         font-size: .8rem;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
@@ -67,7 +73,7 @@ export default{
         width: 150px;
         color: grey;
         // text-align: center;
-        margin-left: 120px;
+        margin-left: 100px;
         font-size: .8rem;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
