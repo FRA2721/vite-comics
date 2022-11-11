@@ -83,6 +83,8 @@ export default{
 .banner{
     color: white;
     background-color: $primary;
+    border-top: 3px solid white;
+    border-bottom: 3px solid white;
 
     // container
     .container{

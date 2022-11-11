@@ -87,6 +87,8 @@ export default{
 // social
 .social{
     background-color: $tertiary;
+    border-top: 3px solid grey;
+    border-bottom: 3px solid grey;
     .social-container{
         justify-content: space-between;
         padding: 3em 5em;

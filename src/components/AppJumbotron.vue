@@ -50,12 +50,12 @@ export default{
         object-position: top;
         transition-duration: 1s;
         opacity: .5;
+        border-top: 3px solid fuchsia;
+        border-bottom: 3px solid fuchsia;
 
         &:hover{
-        transform: scale(.99);
-        border-radius: 50px;
-        opacity: 1;
-    }
+            opacity: 1;
+        }
     }
 
     // jumbotron-formatting-container-section
@@ -69,6 +69,7 @@ export default{
             color: white;
             transform: translateY(-50%);
             background-color: $primary;
+            border: 3px solid white;
         }
     }
 }
